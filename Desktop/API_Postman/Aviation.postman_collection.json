@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "69078a72-1dbc-4f2d-8995-e26c8b7b2281",
+		"name": "Aviation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24193347"
+	},
+	"item": [
+		{
+			"name": "https://api.aviationapi.com/v1/charts?apt=DCA",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"",
+							"pm.test(\"Verify status code 200\", () => {",
+							"",
+							"    pm.response.to.have.status(200);",
+							"",
+							"});",
+							"",
+							"pm.test(\"Verify Content-Type \", () => {",
+							"",
+							"    pm.response.to.have.header(\"Content-Type\")",
+							"",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.aviationapi.com/v1/charts?apt=DCA",
+					"protocol": "https",
+					"host": [
+						"api",
+						"aviationapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"charts"
+					],
+					"query": [
+						{
+							"key": "apt",
+							"value": "DCA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.aviationapi.com/v1/charts/changes?apt=CLT",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"",
+							"pm.test(\"Verify status code 200\", () => {",
+							"",
+							"    pm.response.to.have.status(200);",
+							"",
+							"});",
+							"",
+							"pm.test(\"Verify Content-Type \", () => {",
+							"",
+							"    pm.response.to.have.header(\"Content-Type\")",
+							"",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.aviationapi.com/v1/charts/changes?apt=CLT",
+					"protocol": "https",
+					"host": [
+						"api",
+						"aviationapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"charts",
+						"changes"
+					],
+					"query": [
+						{
+							"key": "apt",
+							"value": "CLT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.aviationapi.com/v1/airports?apt=DCA",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"",
+							"pm.test(\"Verify status code 200\", () => {",
+							"",
+							"    pm.response.to.have.status(200);",
+							"",
+							"});",
+							"",
+							"pm.test(\"Verify Content-Type \", () => {",
+							"",
+							"    pm.response.to.have.header(\"Content-Type\")",
+							"",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.aviationapi.com/v1/airports?apt=DCA",
+					"protocol": "https",
+					"host": [
+						"api",
+						"aviationapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"airports"
+					],
+					"query": [
+						{
+							"key": "apt",
+							"value": "DCA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.aviationapi.com/v1/vatsim/pilots?apt=dca",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"",
+							"pm.test(\"Verify status code 200\", () => {",
+							"",
+							"    pm.response.to.have.status(200);",
+							"",
+							"});",
+							"",
+							"pm.test(\"Verify Content-Type \", () => {",
+							"",
+							"    pm.response.to.have.header(\"Content-Type\")",
+							"",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.aviationapi.com/v1/vatsim/pilots?apt=dca",
+					"protocol": "https",
+					"host": [
+						"api",
+						"aviationapi",
+						"com"
+					],
+					"path": [
+						"v1",
+						"vatsim",
+						"pilots"
+					],
+					"query": [
+						{
+							"key": "apt",
+							"value": "dca"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
